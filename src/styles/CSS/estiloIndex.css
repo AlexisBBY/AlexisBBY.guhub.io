@@ -1,0 +1,105 @@
+.titulo {
+    font-size: 300%;
+}
+
+body {
+    background-color: #FFA500; /* Naranja */
+    margin: 0 auto;
+    padding: 0 auto;
+    color: #000; /* Negro */
+}
+
+#contenedorprincipal {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FF8C00; /* Naranja oscuro */
+    color: #fff; /* Blanco */
+}
+
+section {
+    width: 100%;
+    height: auto; /* Modificado de 600px a auto */
+    margin: 0 auto;
+    padding: 0 auto;
+    color: #000; /* Negro */
+}
+
+footer {
+    background-color: #FF8C00; /* Naranja oscuro */
+    color: #fff; /* Blanco */
+    padding: 20px;
+    border-top: 1px solid #e7e7e7;
+}
+
+/* Cambiar color de texto específico */
+
+header h3 {
+    color: #fff; /* Blanco */
+}
+
+nav a:hover {
+    color: #FFA500; /* Naranja */
+}
+
+footer h4 {
+    color: #333;
+}
+
+footer p {
+    color: #666;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFA500; /* Naranja */
+}
+
+footer a:hover {
+    color: #FF8C00; /* Naranja oscuro */
+}
+
+.dis {
+    background-color: #000;
+}
+
+li {
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+}
+nav ul.submenu {
+    display: none;
+    padding-left: 20px; /* Añade un poco de espacio a la izquierda para subcategorías */
+}
+
+nav ul.submenu li {
+    margin-bottom: 5px; /* Espaciado entre las subcategorías */
+}
+
+nav ul.submenu a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul.submenu a:hover {
+    color: #666;
+}
+.menudesplegable{
+    background-color: #000;
+}
+.qq{
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+}

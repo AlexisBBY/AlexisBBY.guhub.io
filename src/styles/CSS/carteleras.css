@@ -1,0 +1,48 @@
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-img-top {
+    border-bottom: 1px solid #ddd;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+.card-img-top:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen */
+}
+
+.card-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex-grow: 0;
+}
+
+.card-text {
+    color: #555;
+    flex-grow: 1;
+}
+
+.btn-primary {
+    background-color: #f90;
+    border-color: #f90;
+    align-self: start;
+}
+
+.btn-primary:hover {
+    background-color: #ff9900;
+    border-color: #ff9900;
+}

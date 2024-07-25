@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lo mas vendido</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/CSS/carteleras.css">
+    <style>
+        /* Estilos para la barra de navegación */
+        .navbar {
+            background-color: #FF8C00;
+            /* Naranja oscuro */
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff;
+            /* Blanco */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FFA500;
+            /* Naranja */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../public/index.html">CobosHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../public/index.html">Todo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/productos.html">Lo más vendido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>
+                                Perfil
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-warning" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search-heart" viewBox="0 0 16 16">
+                                <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018" />
+                                <path
+                                    d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 0 0 0-11 5.5 5.5 0 0 0 0 11" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido de las tarjetas -->
+    <div class="container mt-3">
+        <h2>TopVentas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../../public/assets/img/imagenespromociones/powerbank.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquam
+                            pariatur minima iure delectus optio! Et nemo eaque doloremque dolores officia at incidunt
+                            impedit dolorum maxime eius, modi nihil commodi.</p>
+                        <a href="#" class="btn btn-primary">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../../public/assets/img/imagenespromociones/bocina.jpg"
+                        alt="Card image" height="200px" width="200PX">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquam
+                            pariatur minima iure delectus optio! Et nemo eaque doloremque dolores officia at incidunt
+                            impedit dolorum maxime eius, modi nihil commodi.</p>
+                        <a href="#" class="btn btn-primary">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../../public/assets/img/imagenespromociones/audiifonos.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquam
+                            pariatur minima iure delectus optio! Et nemo eaque doloremque dolores officia at incidunt
+                            impedit dolorum maxime eius, modi nihil commodi.</p>
+                        <a href="#" class="btn btn-primary">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

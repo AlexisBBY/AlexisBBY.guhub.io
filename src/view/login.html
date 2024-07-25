@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Iniciar Sesión | Registrarse</title>
+    <link rel="stylesheet" href="../styles/CSS/login.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../../node_modules/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper mt-5">
+            <div class="title-text">
+                <div class="title login">
+                    Iniciar Sesión
+                </div>
+                <div class="title signup">
+                    Registrarse
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Iniciar Sesión</label>
+                    <label for="signup" class="slide signup">Registrarse</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <!-- Login Form -->
+                    <form action="../php/login.php" method="post" class="login">
+                        <div class="field">
+                            <input type="text" name="usuario" placeholder="Usuario" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" name="contrasena" placeholder="Contraseña" required>
+                        </div>
+                        <div class="pass-link">
+                            <a href="../view/recover_password.html">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Iniciar Sesión">
+                        </div>
+                        <div class="signup-link">
+                            ¿No tienes una cuenta? <a href="#" id="signup-link">Regístrate</a>
+                        </div>
+                    </form>
+                    <!-- Registration Form -->
+                    <form action="../php/register.php" method="post" class="signup">
+                        <div class="field">
+                            <input type="text" name="usuario" placeholder="Usuario" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" placeholder="Correo Electrónico" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" name="contrasena" placeholder="Contraseña" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" name="confirm_contrasena" placeholder="Confirmar Contraseña" required>
+                        </div>
+                        <div class="field">
+                            <select name="rol" required>
+                                <option value="cliente">Cliente</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Registrarse">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
+

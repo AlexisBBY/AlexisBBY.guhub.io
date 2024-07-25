@@ -1,0 +1,35 @@
+ul {
+    font-size: 130%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: auto;
+    text-align:inherit /* Para alinear los botones horizontalmente */
+}
+
+ul li {
+    display: inline-block; /* Para que los botones se muestren en línea */
+    margin-right: 10px; /* Ajusta la separación horizontal entre los botones */
+    border:black;
+}
+
+ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+
+ul li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+#Perfil {
+    float: right;
+}
